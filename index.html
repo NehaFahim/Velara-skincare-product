@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VELARA — Skin Care, Considered</title>
+<meta name="description" content="Formulated with intention, tested on real skin. Shop serums, cleansers and daily protection built around a handful of ingredients that actually work.">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#23302A">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VELARA">
+<meta property="og:title" content="VELARA — Skin Care, Considered">
+<meta property="og:description" content="Formulated with intention, tested on real skin. Shop serums, cleansers and daily protection.">
+<meta property="og:image" content="https://your-domain.com/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="VELARA home">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="19" r="13" stroke="var(--clay)" stroke-width="1.8"/>
+        <circle cx="20" cy="5.5" r="1.6" fill="var(--clay)"/>
+      </svg>
+      <span class="logo-word">VELARA</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open bag">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4h2l2.2 11.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20.5" r="1.4" fill="currentColor"/><circle cx="18" cy="20.5" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-content">
+      <p class="label">Skin care, considered</p>
+      <h1 class="hero-title">Formulated to be felt,<br>not just seen.</h1>
+      <p class="hero-sub">Five core actives, no filler ingredients, and a routine you can actually stick to. VELARA is skin care built around what your skin does with it — not what the label promises.</p>
+      <div class="hero-cta">
+        <a href="products.html" class="btn btn-primary">Shop bestsellers</a>
+        <a href="services.html" class="btn btn-outline">Build my routine</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <img class="hero-image" src="https://images.unsplash.com/photo-1760860992928-221d73c4c0cc?w=900&q=80&auto=format&fit=crop" alt="Overnight Renewal Serum bottle on a soft studio backdrop">
+      <div class="hero-note">
+        <span class="label on-dark">Overnight Renewal Serum</span>
+        <p>Bakuchiol · Peptides · Squalane</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="trust-strip">
+    <div class="wrap trust-strip-inner">
+      <span>Dermatologist tested</span>
+      <span>Cruelty-free</span>
+      <span>Vegan formulas</span>
+      <span>Made in small batches</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BESTSELLERS ============ -->
+<section class="bestsellers">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="label">Shop</p>
+        <h2>Our bestsellers</h2>
+      </div>
+      <a href="products.html" class="btn-text">View all products</a>
+    </div>
+    <div class="product-grid" id="bestsellerGrid"></div>
+  </div>
+</section>
+
+<!-- ============ INGREDIENT SPOTLIGHT ============ -->
+<section class="ingredient-spotlight bg-porcelain">
+  <div class="wrap ingredient-grid">
+    <div class="ingredient-media">
+      <img src="https://images.unsplash.com/photo-1602855891362-3283cb18a7e0?w=900&q=80&auto=format&fit=crop" alt="Water droplet on a green leaf, representing Centella Asiatica">
+    </div>
+    <div class="ingredient-text">
+      <p class="label">Featured ingredient</p>
+      <h2>Centella <em>asiatica</em></h2>
+      <p class="ingredient-lead">A small, unassuming leaf that has calmed skin for centuries — and one of only five actives we build most of our formulas around.</p>
+      <p>Also known as tiger grass, centella has been used in traditional wound care for generations before skin care brands caught on. We use a cold-extracted form that keeps its calming compounds intact, then let it do most of the talking in our cleansers and oils.</p>
+      <ul class="ingredient-facts">
+        <li><strong>Calms visible redness</strong> — often within 48 hours of consistent use.</li>
+        <li><strong>Supports the skin barrier</strong> — pairs well with actives like retinoids and vitamin C.</li>
+        <li><strong>Gentle enough for daily use</strong> — including on reactive, post-procedure skin.</li>
+      </ul>
+      <a href="products.html?cat=hydrate" class="btn-text">Shop centella formulas</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PHILOSOPHY ============ -->
+<section class="philosophy bg-stone-deep">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="label center">Our approach</p>
+      <h2>Three things we don't compromise on</h2>
+    </div>
+    <div class="philosophy-grid">
+      <div class="philosophy-col">
+        <p class="label">Intention</p>
+        <h3>Formulated with intention</h3>
+        <p>Every formula starts with a single skin concern, not a trend. If an ingredient doesn't earn its place, it doesn't make the cut — regardless of what's popular that season.</p>
+      </div>
+      <div class="philosophy-col">
+        <p class="label">Evidence</p>
+        <h3>Tested on real skin</h3>
+        <p>We run an eight-week trial with a panel of real users before anything ships, and we publish the results — good or unremarkable — on every product page.</p>
+      </div>
+      <div class="philosophy-col">
+        <p class="label">Longevity</p>
+        <h3>Packaging that lasts</h3>
+        <p>Glass and recycled aluminum over plastic, refill pouches for our core products, and boxes designed to be reused, not recycled the same day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL ============ -->
+<section class="testimonial bg-ink">
+  <div class="wrap testimonial-inner">
+    <p class="quote-mark" aria-hidden="true">“</p>
+    <blockquote>I've tried every serum marketed to me on social media. This is the first one that actually changed how my skin looks by week three, not just how it felt for an hour.</blockquote>
+    <p class="testimonial-attribution">Sana W. — VELARA customer since 2022</p>
+  </div>
+</section>
+
+<!-- ============ JOURNAL TEASER ============ -->
+<section class="journal-teaser">
+  <div class="wrap">
+    <div class="section-head split-head">
+      <div>
+        <p class="label">From the journal</p>
+        <h2>Skin care, explained plainly</h2>
+      </div>
+      <a href="blog.html" class="btn-text">Read the journal</a>
+    </div>
+    <div class="blog-grid three-col">
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1602855891362-3283cb18a7e0?w=700&q=80&auto=format&fit=crop" alt="Skincare ingredient close-up"></div>
+        <p class="product-cat">Ingredients</p>
+        <h3 class="blog-card-title">What bakuchiol actually does (and doesn't)</h3>
+        <p class="product-desc">The gentler retinol alternative, explained without the marketing spin.</p>
+      </a>
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1574670700790-fa314ab37787?w=700&q=80&auto=format&fit=crop" alt="Face oil bottle on a shelf"></div>
+        <p class="product-cat">Routines</p>
+        <h3 class="blog-card-title">The order your products actually go in</h3>
+        <p class="product-desc">Layering rules that matter, and the ones you can safely ignore.</p>
+      </a>
+      <a href="blog.html" class="blog-card">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1598662972299-5408ddb8a3dc?w=700&q=80&auto=format&fit=crop" alt="Sunscreen tube on a light background"></div>
+        <p class="product-cat">Skin concerns</p>
+        <h3 class="blog-card-title">Why your SPF isn't working as hard as you think</h3>
+        <p class="product-desc">Application amounts, reapplication, and the myths in between.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="newsletter-band bg-ink">
+  <div class="wrap newsletter-inner">
+    <div>
+      <p class="label on-dark">Stay in the loop</p>
+      <h2>New formulas, restocks, and the occasional discount.</h2>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <span class="logo-word">VELARA</span>
+      <p>Skin care formulated around a handful of ingredients that actually work — nothing more, nothing less.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="products.html?cat=cleanse">Cleanse</a>
+      <a href="products.html?cat=treat">Treat</a>
+      <a href="products.html?cat=hydrate">Hydrate</a>
+      <a href="products.html?cat=protect">Protect</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="contact.html">Shipping & returns</a>
+      <a href="contact.html">Track an order</a>
+      <a href="contact.html">FAQ</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> VELARA. All rights reserved.</p>
+    <p>Karachi, Pakistan</p>
+  </div>
+</footer>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+  <div class="cart-header">
+    <h3>Your bag</h3>
+    <button class="icon-btn" id="cartClose" aria-label="Close bag">✕</button>
+  </div>
+  <div class="cart-shipping-note" id="cartShipNote"></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">
+    <p>Your bag is empty. Explore the shop to find your routine.</p>
+    <a href="products.html" class="btn btn-outline" id="cartEmptyBtn">Shop now</a>
+  </div>
+  <div class="cart-summary" id="cartSummary">
+    <div class="summary-row"><span>Subtotal</span><span id="sumSubtotal">$0</span></div>
+    <div class="summary-row"><span>Shipping</span><span id="sumShipping">$0</span></div>
+    <div class="summary-row total"><span>Total</span><span id="sumTotal">$0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<!-- ============ CHECKOUT MODAL ============ -->
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="icon-btn modal-close" id="checkoutClose" aria-label="Close checkout">✕</button>
+    <div class="steps">
+      <span class="step active" data-step="1">1. Delivery</span>
+      <span class="step" data-step="2">2. Payment</span>
+      <span class="step" data-step="3">3. Done</span>
+    </div>
+
+    <div class="modal-step" id="step1" data-step="1">
+      <h3 id="checkoutTitle">Delivery details</h3>
+      <form id="deliveryForm">
+        <div class="field"><label for="oName">Full name</label><input type="text" id="oName" required placeholder="Your name"></div>
+        <div class="field"><label for="oPhone">Phone</label><input type="tel" id="oPhone" required placeholder="+92 3xx xxxxxxx"></div>
+        <div class="field"><label for="oAddress">Shipping address</label><textarea id="oAddress" required rows="3" placeholder="Full address"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Continue to payment</button>
+      </form>
+    </div>
+
+    <div class="modal-step" id="step2" data-step="2" hidden>
+      <h3>Payment method</h3>
+      <div class="pay-methods">
+        <label class="pay-option"><input type="radio" name="payMethod" value="card" checked><span>Debit / Credit Card</span></label>
+        <label class="pay-option"><input type="radio" name="payMethod" value="cod"><span>Cash on Delivery</span></label>
+      </div>
+      <form id="paymentForm">
+        <div class="card-fields" id="cardFields">
+          <div class="field"><label for="pCardName">Name on card</label><input type="text" id="pCardName" placeholder="Name as shown on card"></div>
+          <div class="field"><label for="pCardNumber">Card number</label><input type="text" id="pCardNumber" placeholder="4242 4242 4242 4242" maxlength="19"></div>
+          <div class="field-row">
+            <div class="field"><label for="pExpiry">Expiry</label><input type="text" id="pExpiry" placeholder="MM/YY" maxlength="5"></div>
+            <div class="field"><label for="pCvv">CVV</label><input type="text" id="pCvv" placeholder="123" maxlength="3"></div>
+          </div>
+          <p class="demo-note">This is a demo checkout — no real payment is processed. A live store would connect a real gateway (Stripe, JazzCash, Easypaisa) here.</p>
+        </div>
+        <div class="order-total-row"><span>Total to pay</span><strong id="payTotal">$0</strong></div>
+        <button type="submit" class="btn btn-primary btn-block" id="payBtn">Place order</button>
+      </form>
+    </div>
+
+    <div class="modal-step" id="step3" data-step="3" hidden>
+      <div class="confirm-box">
+        <svg class="confirm-check" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" stroke="var(--clay)" stroke-width="2"/><path d="M18 31l8 8 16-17" stroke="var(--clay)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Order placed</h3>
+        <p>Thank you<span id="confirmName"></span> — your order is being prepared for shipment.</p>
+        <div class="confirm-meta">
+          <div><span>Order #</span><strong id="confirmId"></strong></div>
+          <div><span>Arrives in</span><strong id="confirmTime"></strong></div>
+        </div>
+        <button class="btn btn-primary btn-block" id="confirmClose">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>

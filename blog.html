@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Journal — VELARA</title>
+<meta name="description" content="Ingredient guides, routine breakdowns and skin concern explainers from the VELARA team.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+<meta name="theme-color" content="#23302A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="VELARA">
+<meta property="og:title" content="Journal — VELARA">
+<meta property="og:image" content="https://your-domain.com/assets/og-image.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="VELARA home">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="20" cy="19" r="13" stroke="var(--clay)" stroke-width="1.8"/>
+        <circle cx="20" cy="5.5" r="1.6" fill="var(--clay)"/>
+      </svg>
+      <span class="logo-word">VELARA</span>
+    </a>
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="services.html">Services</a>
+      <a href="blog.html" class="active">Journal</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn cart-btn" id="cartToggle" aria-label="Open bag">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 4h2l2.2 11.4a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.6L21 8H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="20.5" r="1.4" fill="currentColor"/><circle cx="18" cy="20.5" r="1.4" fill="currentColor"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+      <button class="icon-btn nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="page-header">
+  <div class="wrap">
+    <p class="label">Journal</p>
+    <h1>Skin care, explained plainly</h1>
+    <p class="section-desc" style="margin-top:14px;">No miracle claims, no 12-step guilt trips — just what the ingredients do and why we chose them.</p>
+  </div>
+</section>
+
+<!-- Featured post -->
+<section style="padding-bottom:56px;">
+  <div class="wrap">
+    <a href="#" class="featured-post">
+      <div class="featured-post-media">
+        <img src="https://images.unsplash.com/photo-1602855891362-3283cb18a7e0?w=1000&q=80&auto=format&fit=crop" alt="Close-up of a leaf with a water droplet, representing skincare ingredients">
+      </div>
+      <div class="featured-post-body">
+        <p class="product-cat">Ingredients · 7 min read</p>
+        <h2>The five ingredients we build almost everything around</h2>
+        <p class="section-desc">Bakuchiol, centella, squalane, niacinamide, and vitamin C show up across most of our formulas — not because it's trendy, but because the evidence keeps holding up. Here's what each one actually does, and who it's for.</p>
+        <span class="btn-text">Read the full story</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section style="padding-top:0;">
+  <div class="wrap">
+    <div class="filter-bar" id="blogFilterBar">
+      <div class="filter-pills">
+        <button type="button" class="filter-pill active" data-cat="all">All posts</button>
+        <button type="button" class="filter-pill" data-cat="ingredients">Ingredients</button>
+        <button type="button" class="filter-pill" data-cat="routines">Routines</button>
+        <button type="button" class="filter-pill" data-cat="concerns">Skin concerns</button>
+        <button type="button" class="filter-pill" data-cat="brand">Behind the brand</button>
+      </div>
+    </div>
+
+    <div class="blog-grid three-col">
+      <a href="#" class="blog-card" data-cat="ingredients">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1574670700790-fa314ab37787?w=700&q=80&auto=format&fit=crop" alt="Amber glass bottle of face oil"></div>
+        <p class="product-cat">Ingredients · 5 min read</p>
+        <h3 class="blog-card-title">What bakuchiol actually does (and doesn't)</h3>
+        <p class="product-desc">The gentler retinol alternative, explained without the marketing spin — including when a real retinoid is still the better choice.</p>
+      </a>
+      <a href="#" class="blog-card" data-cat="routines">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1615900119312-2acd3a71f3aa?w=700&q=80&auto=format&fit=crop" alt="Skincare cleanser tube on a light background"></div>
+        <p class="product-cat">Routines · 4 min read</p>
+        <h3 class="blog-card-title">The order your products actually go in</h3>
+        <p class="product-desc">Layering rules that matter, and the ones the internet has been overcomplicating for years.</p>
+      </a>
+      <a href="#" class="blog-card" data-cat="concerns">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1598662972299-5408ddb8a3dc?w=700&q=80&auto=format&fit=crop" alt="Sunscreen tube on a light background"></div>
+        <p class="product-cat">Skin concerns · 6 min read</p>
+        <h3 class="blog-card-title">Why your SPF isn't working as hard as you think</h3>
+        <p class="product-desc">Most people apply less than half the sunscreen they need. Here's how much is actually enough.</p>
+      </a>
+      <a href="#" class="blog-card" data-cat="ingredients">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1696691719049-ed915b8d6e67?w=700&q=80&auto=format&fit=crop" alt="Dropper bottle on a grey background"></div>
+        <p class="product-cat">Ingredients · 5 min read</p>
+        <h3 class="blog-card-title">Vitamin C: the form matters more than the percentage</h3>
+        <p class="product-desc">Why a well-formulated 10% often outperforms an unstable 20%, and how to tell the difference.</p>
+      </a>
+      <a href="#" class="blog-card" data-cat="concerns">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1760860992928-221d73c4c0cc?w=700&q=80&auto=format&fit=crop" alt="Serum bottle with molecular texture background"></div>
+        <p class="product-cat">Skin concerns · 8 min read</p>
+        <h3 class="blog-card-title">Barrier damage: how to spot it and undo it</h3>
+        <p class="product-desc">Stinging, tightness, and sudden sensitivity to old favorites are usually the same root cause.</p>
+      </a>
+      <a href="#" class="blog-card" data-cat="brand">
+        <div class="blog-card-media"><img src="https://images.unsplash.com/photo-1602855891362-3283cb18a7e0?w=700&q=80&auto=format&fit=crop" alt="Leaf close-up representing sustainable sourcing"></div>
+        <p class="product-cat">Behind the brand · 6 min read</p>
+        <h3 class="blog-card-title">Why we test for eight weeks before anything ships</h3>
+        <p class="product-desc">A look inside our panel-testing process, and the formula that didn't make it past week four.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="newsletter-band bg-ink">
+  <div class="wrap newsletter-inner">
+    <div>
+      <p class="label on-dark">Stay in the loop</p>
+      <h2>New articles land in your inbox roughly twice a month.</h2>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Your email address" required>
+      <button type="submit">Sign up</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap footer-top">
+    <div class="footer-brand">
+      <span class="logo-word">VELARA</span>
+      <p>Skin care formulated around a handful of ingredients that actually work — nothing more, nothing less.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <a href="products.html?cat=cleanse">Cleanse</a>
+      <a href="products.html?cat=treat">Treat</a>
+      <a href="products.html?cat=hydrate">Hydrate</a>
+      <a href="products.html?cat=protect">Protect</a>
+    </div>
+    <div class="footer-col">
+      <h4>Company</h4>
+      <a href="services.html">Services</a>
+      <a href="blog.html">Journal</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Help</h4>
+      <a href="contact.html">Shipping & returns</a>
+      <a href="contact.html">Track an order</a>
+      <a href="contact.html">FAQ</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> VELARA. All rights reserved.</p>
+    <p>Karachi, Pakistan</p>
+  </div>
+</footer>
+
+<div class="overlay" id="overlay"></div>
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping bag">
+  <div class="cart-header"><h3>Your bag</h3><button class="icon-btn" id="cartClose" aria-label="Close bag">✕</button></div>
+  <div class="cart-shipping-note" id="cartShipNote"></div>
+  <div class="cart-items" id="cartItems"></div>
+  <div class="cart-empty" id="cartEmpty">
+    <p>Your bag is empty. Explore the shop to find your routine.</p>
+    <a href="products.html" class="btn btn-outline" id="cartEmptyBtn">Shop now</a>
+  </div>
+  <div class="cart-summary" id="cartSummary">
+    <div class="summary-row"><span>Subtotal</span><span id="sumSubtotal">$0</span></div>
+    <div class="summary-row"><span>Shipping</span><span id="sumShipping">$0</span></div>
+    <div class="summary-row total"><span>Total</span><span id="sumTotal">$0</span></div>
+    <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+  </div>
+</aside>
+
+<div class="modal-overlay" id="checkoutOverlay">
+  <div class="modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle">
+    <button class="icon-btn modal-close" id="checkoutClose" aria-label="Close checkout">✕</button>
+    <div class="steps">
+      <span class="step active" data-step="1">1. Delivery</span>
+      <span class="step" data-step="2">2. Payment</span>
+      <span class="step" data-step="3">3. Done</span>
+    </div>
+    <div class="modal-step" id="step1" data-step="1">
+      <h3 id="checkoutTitle">Delivery details</h3>
+      <form id="deliveryForm">
+        <div class="field"><label for="oName">Full name</label><input type="text" id="oName" required placeholder="Your name"></div>
+        <div class="field"><label for="oPhone">Phone</label><input type="tel" id="oPhone" required placeholder="+92 3xx xxxxxxx"></div>
+        <div class="field"><label for="oAddress">Shipping address</label><textarea id="oAddress" required rows="3" placeholder="Full address"></textarea></div>
+        <button type="submit" class="btn btn-primary btn-block">Continue to payment</button>
+      </form>
+    </div>
+    <div class="modal-step" id="step2" data-step="2" hidden>
+      <h3>Payment method</h3>
+      <div class="pay-methods">
+        <label class="pay-option"><input type="radio" name="payMethod" value="card" checked><span>Debit / Credit Card</span></label>
+        <label class="pay-option"><input type="radio" name="payMethod" value="cod"><span>Cash on Delivery</span></label>
+      </div>
+      <form id="paymentForm">
+        <div class="card-fields" id="cardFields">
+          <div class="field"><label for="pCardName">Name on card</label><input type="text" id="pCardName" placeholder="Name as shown on card"></div>
+          <div class="field"><label for="pCardNumber">Card number</label><input type="text" id="pCardNumber" placeholder="4242 4242 4242 4242" maxlength="19"></div>
+          <div class="field-row">
+            <div class="field"><label for="pExpiry">Expiry</label><input type="text" id="pExpiry" placeholder="MM/YY" maxlength="5"></div>
+            <div class="field"><label for="pCvv">CVV</label><input type="text" id="pCvv" placeholder="123" maxlength="3"></div>
+          </div>
+          <p class="demo-note">This is a demo checkout — no real payment is processed. A live store would connect a real gateway (Stripe, JazzCash, Easypaisa) here.</p>
+        </div>
+        <div class="order-total-row"><span>Total to pay</span><strong id="payTotal">$0</strong></div>
+        <button type="submit" class="btn btn-primary btn-block" id="payBtn">Place order</button>
+      </form>
+    </div>
+    <div class="modal-step" id="step3" data-step="3" hidden>
+      <div class="confirm-box">
+        <svg class="confirm-check" viewBox="0 0 60 60" fill="none"><circle cx="30" cy="30" r="28" stroke="var(--clay)" stroke-width="2"/><path d="M18 31l8 8 16-17" stroke="var(--clay)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <h3>Order placed</h3>
+        <p>Thank you<span id="confirmName"></span> — your order is being prepared for shipment.</p>
+        <div class="confirm-meta">
+          <div><span>Order #</span><strong id="confirmId"></strong></div>
+          <div><span>Arrives in</span><strong id="confirmTime"></strong></div>
+        </div>
+        <button class="btn btn-primary btn-block" id="confirmClose">Continue shopping</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/script.js"></script>
+<script src="js/render.js"></script>
+</body>
+</html>
