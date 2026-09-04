@@ -116,6 +116,7 @@
     for(var i=0;i<PRODUCTS.length;i++){ if(PRODUCTS[i].id===id) return PRODUCTS[i]; }
     return null;
   }
+  
   function findSize(product, sizeLabel){
     for(var i=0;i<product.sizes.length;i++){ if(product.sizes[i].label===sizeLabel) return product.sizes[i]; }
     return product.sizes[0];
